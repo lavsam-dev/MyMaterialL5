@@ -11,15 +11,17 @@
         android:roundIcon="@mipmap/ic_my_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/MyAppTheme">
-        <activity android:name=".ui.animations.AnimaShuffleActivity">
+        <activity android:name=".ui.animations.AnimaStateListActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.animations.AnimaPathActivity"></activity>
-        <activity android:name=".ui.animations.AnimaEnlargeActivity"></activity>
+        <activity android:name=".ui.animations.AnimaFabActivity"></activity>
+        <activity android:name=".ui.animations.AnimaShuffleActivity" />
+        <activity android:name=".ui.animations.AnimaPathActivity" />
+        <activity android:name=".ui.animations.AnimaEnlargeActivity" />
         <activity android:name=".ui.animations.AnimaExplodeActivity" />
         <activity android:name=".ui.apibottom.NasaApiBottomActivity" />
         <activity android:name=".ui.api.NasaApiActivity" />
