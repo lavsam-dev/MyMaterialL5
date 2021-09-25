@@ -42,7 +42,8 @@
                 app:endIconDrawable="@drawable/ic_wikipedia"
                 app:endIconMode="custom"
                 app:helperText="@string/wiki_helper_text"
-                app:layout_constraintBottom_toTopOf="@+id/image_view"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/chipGroupMain"
                 app:layout_constraintStart_toEndOf="parent">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -60,6 +61,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/input_layout"
+                app:layout_constraintBottom_toTopOf="@id/image_view"
                 app:singleSelection="true">
 
                 <com.google.android.material.chip.Chip
@@ -86,13 +88,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="60dp"
+                android:layout_marginTop="1dp"
                 android:rotation="360"
                 android:contentDescription="@string/photo_of_the_day_stub"
                 app:layout_constraintBottom_toTopOf="@id/bottom_app_bar"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/input_layout"
+                app:layout_constraintTop_toBottomOf="@id/chipGroupMain"
                 app:srcCompat="@drawable/ic_no_photo_vector" />
 
         </androidx.constraintlayout.motion.widget.MotionLayout>
